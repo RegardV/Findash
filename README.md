@@ -1,6 +1,20 @@
 # 📊 Personal In and Out Dashboard
 
-A comprehensive financial analysis dashboard designed specifically for South African users, featuring Rand (ZAR) currency support and local tax compliance.
+```
+    ████████████████████████████████████████████████████████████████
+    ██                                                       ██
+    ██     🏠 FAMILY EXPENSE TRACKING SYSTEM FOR SOUTH AFRICANS    ██
+    ██                                                       ██
+    ██  💳 CSV IMPORT → 🏷️ CATEGORIZE → 👥 FAMILY MEMBERS → 📊 REPORTS  ██
+    ██                                                       ██
+    ████████████████████████████████████████████████████████████
+                     _______________
+                    |               |
+                    |   💰 ZAR R    |
+                    |_______________|
+```
+
+A powerful financial analysis dashboard designed specifically for **family expense tracking** with South African context. Import bank CSV data, categorize by family members, and generate real-time expense reports per person.
 
 ## 🚀 Quick Start
 
@@ -16,21 +30,70 @@ python3 start_dashboard.py
 ## 💰 Features
 
 ### **🎯 Core Functionality**
-- ✅ **South African Rand (ZAR)** - Native currency support
-- ✅ **CLI Dashboard** - Beautiful colored terminal interface
-- ✅ **9 Menu Options** - Complete financial management
-- ✅ **Bank Statement Import** - CSV processing and categorization
-- ✅ **Budget Management** - Entity-based tracking (Dad, Mom, dependents, business)
-- ✅ **Tax Reporting** - South African tax compliance
-- ✅ **Currency Conversion** - Multi-currency support with live rates
-- ✅ **Category Management** - Custom categories and labels
-- ✅ **Report Generation** - Professional financial reports
+- ✅ **Bank CSV Import** - Import and process bank statements automatically
+- ✅ **Family Member Categories** - Create categories for Dad, Mom, and each dependent
+- ✅ **Smart Categorization** - AI-powered transaction categorization with SA business patterns
+- ✅ **Real-time Reports** - Generate expense reports per family member instantly
+- ✅ **Entity-Based Budgeting** - Track budgets by person, business, or household
+- ✅ **South African Optimized** - Native ZAR support and local business patterns
+- ✅ **Professional CLI** - Beautiful colored terminal interface
 
-### **👥 Entity-Based Budgeting**
-- **Personal**: Dad, Mom, dependents (individual tracking)
-- **Business**: TA-REALW and other business expenses
-- **Household**: Home, family, motors, shared expenses
-- **South African**: Optimized for SA banking and tax system
+### **👥 Family Expense Tracking System**
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    HOW IT WORKS                                 │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  1️⃣  IMPORT BANK CSV                                           │
+│     ┌─────────────────┐    ┌─────────────────┐                   │
+│     │   Bank CSV      │───▶│  Transactions    │                   │
+│     │                 │    │                 │                   │
+│     • Date           │    • Date           │                   │
+│     • Description    │    • Amount         │                   │
+│     • Amount         │    • Description    │                   │
+│     └─────────────────┘    └─────────────────┘                   │
+│                                                                 │
+│  2️⃣  AUTO-CATEGORIZE                                          │
+│     ┌─────────────────┐    ┌─────────────────┐                   │
+│     │  SASOL FUEL     │───▶│   Motors/Fuel   │                   │
+│     │  WOOLWORTHS     │───▶│  Groceries      │                   │
+│     │  TELKOM BILL    │───▶│  Data/Internet  │                   │
+│     │  BARBER SHOP    │───▶│  Dad/Personal   │                   │
+│     └─────────────────┘    └─────────────────┘                   │
+│                                                                 │
+│  3️⃣  FAMILY MEMBER ASSIGNMENT                                   │
+│     ┌─────────────────┐    ┌─────────────────┐                   │
+│     │  Categories     │───▶│  Family Members │                   │
+│     └─────────────────┘    └─────────────────┘                   │
+│           │                       │                           │
+│    ┌──────┴──────┐        ┌──────┼──────┐        ┌──────────────┐ │
+│    │    Dad     │        │    Mom     │        │   Business   │ │
+│    │ Personal   │        │ Groceries  │        │ TA-REALW     │ │
+│    │ Transport  │        │ Shopping   │        │ Supplies     │ │
+│    │ Motors     │        │ Healthcare  │        │ Office       │ │
+│    └────────────┘        └────────────┘        └──────────────┘ │
+│                                                                 │
+│  4️⃣  REAL-TIME REPORTS                                         │
+│     ┌─────────────────┐    ┌─────────────────┐                   │
+│     │  Transaction    │───▶│   Per Person     │                   │
+│     │     Data        │    │   Expense Report │                   │
+│     └─────────────────┘    └─────────────────┘                   │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### **🏷️ Categories & Labels System**
+- **Family Member Categories**: Dad, Mom, Child1, Child2, etc.
+- **Shared Categories**: Home, Motors, Groceries, Entertainment
+- **Business Categories**: TA-REALW, Office Expenses, Supplies
+- **Custom Labels**: Create specific labels for each family member's expenses
+
+### **📊 What Reports Can Show**
+- **Individual Expenses**: How much Dad spent this month
+- **Category Breakdown**: Family groceries vs. dining out costs
+- **Budget vs. Actual**: Compare planned vs. actual spending per person
+- **Business vs. Personal**: Separate business expenses from family finances
 
 ## 📋 Menu Options
 
@@ -81,23 +144,42 @@ Download the latest release from GitHub and extract, then run `./setup.sh`
 python3 start_dashboard.py
 ```
 
-### **Import Bank Statements**
+### **📁 Import Bank Statements**
 1. Select option 1 (Import & Process)
-2. Choose CSV file path
-3. Dashboard auto-processes transactions
+2. Choose your bank CSV file
+3. **Auto-categorization happens instantly**:
+   - SASOL → Motors/Fuel
+   - Woolworths → Groceries
+   - Telkom → Data/Internet
+   - Barber → Dad/Personal
+4. **Assign to family members** automatically or manually
 
-### **Generate Reports**
+### **📊 Generate Family Member Reports**
 1. Select option 2 (Generate Reports)
 2. Choose report type:
-   - Monthly Summary
-   - Category Breakdown
-   - Budget Analysis
-   - Tax Reports
+   - **Dad's Monthly Expenses** - All Dad's categorized spending
+   - **Mom's Budget Report** - Compare planned vs. actual
+   - **Family Grocery Spending** - Who spends what on food
+   - **Child/Dependent Reports** - Track each child's expenses separately
+   - **Business vs Personal** - Separate TA-REALW from family expenses
 
-### **Manage Budgets**
+### **🏷️ Manage Family Categories**
+1. Select option 3 (Manage Categories & Labels)
+2. **Create family member categories**:
+   - Add "John" as a new family member
+   - Create labels: "John's School", "John's Sports", "John's Transport"
+3. **Set spending patterns**:
+   - "SCHOOL FEES" → John/School
+   - "SWIMMING LESSONS" → John/Sports
+   - "SCHOOL UNIFORM" → John/Personal
+
+### **💰 Set Up Family Budgets**
 1. Select option 4 (Budget Management)
-2. Create entity-specific budgets
-3. Track performance vs actuals
+2. **Create per-person budgets**:
+   - Dad: R5,000/month (transport, personal care, etc.)
+   - Mom: R3,000/month (groceries, shopping, healthcare)
+   - Child1: R2,000/month (school, activities, clothing)
+   - Business: R10,000/month (TA-REALW, supplies, office)
 
 ## 🌐 Currency Support
 
@@ -153,21 +235,95 @@ docker run -it --rm \
 
 ## 📊 Sample Reports
 
-### **Monthly Summary Example**
-```
-💰 Financial Overview:
-─────────────────────
-Total Income: R15,450.00
-Total Expenses: R8,230.50
-Net Cash Flow: R7,219.50
-Savings Rate: 46.8%
+### **👨‍👩‍👧‍👦 Family Member Expense Reports**
 
-🏆 Top Spending Categories:
-─────────────────────────
-Groceries: R2,150.00 (26.1%)
-Transportation: R1,890.00 (23.0%)
-Home: R1,450.00 (17.6%)
-Data/Communication: R890.00 (10.8%)
+#### **Dad's Monthly Report**
+```
+👨 Dad's Expenses - November 2024
+=================================
+🚗 Motors & Transport: R3,450.00
+   • SASOL Fuel: R2,200.00
+   • Car Insurance: R850.00
+   • Car Wash: R400.00
+
+💼 Business (TA-REALW): R2,150.00
+   • Office Supplies: R650.00
+   • Tools & Equipment: R1,500.00
+
+👤 Personal Care: R680.00
+   • Barber Shop: R150.00
+   • Gym Membership: R280.00
+   • Healthcare: R250.00
+
+📊 TOTAL: R6,280.00
+💳 Budget Used: 78% (of R8,000 budget)
+```
+
+#### **Mom's Monthly Report**
+```
+👩 Mom's Expenses - November 2024
+=================================
+🛒 Groceries & Household: R4,200.00
+   • Pick n Pay: R2,800.00
+   • Woolworths: R1,400.00
+
+🛍️ Shopping & Personal: R1,850.00
+   • Clothing: R950.00
+   • Beauty & Personal Care: R600.00
+   • Pharmacy: R300.00
+
+🏥 Healthcare: R520.00
+   • Doctor Visit: R300.00
+   • Medication: R220.00
+
+📊 TOTAL: R6,570.00
+💳 Budget Used: 82% (of R8,000 budget)
+```
+
+#### **Child's Monthly Report (Emma - Age 12)**
+```
+👧 Emma's Expenses - November 2024
+=================================
+📚 Education & School: R2,400.00
+   • School Fees: R1,800.00
+   • School Supplies: R300.00
+   • Tutoring: R300.00
+
+🏃 Activities: R1,200.00
+   • Swimming Lessons: R500.00
+   • Dance Classes: R450.00
+   • Sports Equipment: R250.00
+
+👕 Clothing & Personal: R850.00
+   • School Uniform: R400.00
+   • Casual Clothes: R300.00
+   • Shoes: R150.00
+
+📊 TOTAL: R4,450.00
+💳 Budget Used: 89% (of R5,000 budget)
+```
+
+#### **Family Summary Report**
+```
+🏠 Family Expense Overview - November 2024
+==========================================
+📊 TOTAL FAMILY SPENDING: R17,300.00
+
+👥 PER PERSON BREAKDOWN:
+   • Dad: R6,280.00 (36.3%)
+   • Mom: R6,570.00 (38.0%)
+   • Emma: R4,450.00 (25.7%)
+
+🏷️ TOP FAMILY CATEGORIES:
+   • Groceries & Food: R4,200.00 (24.3%)
+   • Motors & Transport: R3,450.00 (19.9%)
+   • Education & School: R2,400.00 (13.9%)
+   • Shopping & Personal: R2,700.00 (15.6%)
+   • Healthcare & Medical: R820.00 (4.7%)
+
+💰 FAMILY INCOME: R25,000.00
+💸 FAMILY EXPENSES: R17,300.00
+📈 NET SAVINGS: R7,700.00 (30.8% savings rate)
 ```
 
 ## 🔄 Updates and Maintenance
