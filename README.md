@@ -1,17 +1,15 @@
 # 📊 Personal In and Out Dashboard
 
 ```
-    ████████████████████████████████████████████████████████████████
-    ██                                                       ██
-    ██     🏠 FAMILY EXPENSE TRACKING SYSTEM FOR SOUTH AFRICANS    ██
-    ██                                                       ██
-    ██  💳 CSV IMPORT → 🏷️ CATEGORIZE → 👥 FAMILY MEMBERS → 📊 REPORTS  ██
-    ██                                                       ██
-    ████████████████████████████████████████████████████████████
-                     _______________
-                    |               |
-                    |   💰 ZAR R    |
-                    |_______________|
+╔═══════════════════════════════════════════════════════════════════╗
+║             📊 PERSONAL IN AND OUT DASHBOARD                     ║
+╠═══════════════════════════════════════════════════════════════════╣
+║                                                               ║
+║   💳 CSV IMPORT → 🏷️ AUTO-CATEGORIZE → 👥 FAMILY TRACKING → 📊 REPORTS   ║
+║                                                               ║
+║   🔥 Import bank statements → Smart categorization → Per person reports ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════════╝
 ```
 
 A powerful financial analysis dashboard designed specifically for **family expense tracking** with South African context. Import bank CSV data, categorize by family members, and generate real-time expense reports per person.
